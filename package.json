@@ -1,6 +1,6 @@
 {
   "name": "replaceable-function",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a function you can replace.",
   "main": "index.js",
   "repository": {
