@@ -6,6 +6,33 @@
 
     npm install replaceable-function
 
+## Example
+
+```js
+var handler = Replaceable(start)
+stream.on('data', handler)
+
+function start(data) {
+  // handle connection initialisation
+  …
+  handler.replace(handle)
+}
+
+function handle(data) {
+  // handle the data
+  if (data.last)
+    handler.replace(end)
+  else
+    …
+}
+
+function end(data) {
+  // handle the goodbye
+  …
+  handler.replace(null)
+}
+```
+
 ## API
 ## Replaceable(fn)
 
