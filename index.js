@@ -15,8 +15,8 @@ function replaceable(initial) {
   return fn
 }
 
-replaceable.quiet = quietReplacable
-function quietReplacable(initial) {
+replaceable.quiet = quietReplaceable
+function quietReplaceable(initial) {
   var implementation
     , fn = function() { return implementation.apply(this, arguments) }
 

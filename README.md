@@ -7,12 +7,12 @@
     npm install replaceable-function
 
 ## API
-## Replacable(fn)
+## Replaceable(fn)
 
   Returns a function that delegates to its internal function.
   If the passed value isn't a function, it'll be replaced by `function() { throw new TypeError('not a function') }`.
 
-## Replacable.quiet(fn)
+## Replaceable.quiet(fn)
 
   Returns a function that delegates to its internal function.
   If the passed value isn't a function, it'll be replaced by `function() {}`.
